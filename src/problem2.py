@@ -3,9 +3,9 @@ Exam 3, problem 2.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Nelson Rainey.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DOne: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -85,4 +85,14 @@ def shape(n):
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
+
+    if n > 9: return
+    for k in range(n):
+        for j in range(n-k):
+            print(k+1,end='')
+        print('*',end='')
+        for j in range(k):
+            print(j+1,end='')
+        print()
+
 main()
