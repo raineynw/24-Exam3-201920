@@ -3,9 +3,9 @@ Exam 3, problem 3.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Nelson Rainey.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DOne: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import testing_helper
 import time
@@ -185,6 +185,13 @@ def problem3(sequence):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    total_prime = 0
+    for k in range (len(sequence)):
+        a = sequence[k]
+        if is_prime(a) == True:
+            sequence[k] = sequence[k]+3
+            total_prime = total_prime + 1
+    return total_prime
 
 
 ###############################################################################
